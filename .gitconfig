@@ -1,0 +1,4 @@
+[alias]
+	lolol = log --graph --decorate --oneline --color
+    lol = lolol --reflog
+    trackbranch = "!f() { : git checkout -b ; git checkout -b $1_$2 --track $1/$2; }; f"
