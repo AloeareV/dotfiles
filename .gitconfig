@@ -1,4 +1,24 @@
+[user]
+	name = Hazel OHearn
+	email = gygaxis@zingolabs.org
+	signingkey = 8B008A957E71F0F8
 [alias]
 	lolol = log --graph --decorate --oneline --color
     lol = lolol --reflog
     trackbranch = "!f() { : git checkout -b ; git checkout -b $1_$2 --track $1/$2; }; f"
+	newupstream = "!f() { : git push ; git push -u $1 $1_$2:$2; }; f"
+[commit]
+	template = ~/dotfiles/.git-commit-template.txt
+	gpgsign = true
+[core]
+	excludefile = /root/.gitignore
+[pull]
+	ff = only
+[push]
+	default = upstream
+[diff]
+	tool = meld
+[difftool]
+	prompt = false
+[gpg]
+	program = gpg2
