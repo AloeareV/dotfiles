@@ -40,7 +40,7 @@ set shiftwidth=4
 set expandtab
 set laststatus=2
 set number
-set relativenumber
+"set relativenumber
 syntax on
 "set foldmethod=syntax
 
@@ -65,9 +65,9 @@ autocmd BufWritePre *.rs :call RustFormat()
 autocmd BufReadPost *.rs :SemanticHighlight
 autocmd BufWritePost *.rs :SemanticHighlight
 autocmd BufEnter *.rs :SemanticHighlight
-autocmd BufWritePre *.c :ClangFormat
-autocmd BufWritePre *.h :ClangFormat
-autocmd BufWritePre *.cpp :ClangFormat
+"autocmd BufWritePre *.c :ClangFormat
+"autocmd BufWritePre *.h :ClangFormat
+"autocmd BufWritePre *.cpp :ClangFormat
 autocmd FileType * set colorcolumn=
 autocmd FileType rust set colorcolumn=80
 hi Folded ctermfg=Black
